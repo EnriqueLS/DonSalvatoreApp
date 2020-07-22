@@ -35,11 +35,11 @@ class HomePage extends StatelessWidget {
 
 class ListaCategorias extends StatefulWidget {
 
-  MyProvider _miProvider;
+  final MyProvider miProvider;
 
-  ListaCategorias(MyProvider miProvider){
-    this._miProvider = miProvider;
-  }
+
+  ListaCategorias(this.miProvider);
+
 
   @override
   _ListaCategoriasState createState() => _ListaCategoriasState();
@@ -71,7 +71,7 @@ class _ListaCategoriasState extends State<ListaCategorias> {
           itemBuilder: (BuildContext context, int index) {
             return GestureDetector(
               onTap: () {
-                widget._miProvider.categoriaSeleccionada = miCarta.categorias[index].nombreCategoria;
+                widget.miProvider.categoriaSeleccionada = miCarta.categorias[index].nombreCategoria;
                 print(miCarta.categorias[index].nombreCategoria);
                 setState(() {
                   categoriaSeleccionada =
