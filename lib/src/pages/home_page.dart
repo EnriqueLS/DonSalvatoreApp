@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 //
+import 'package:flutter_don_salvatore/src/widgets/appbar_logo.dart';
 import 'package:flutter_don_salvatore/src/models/carta_model.dart';
 import 'package:flutter_don_salvatore/src/services/carta_service.dart';
 import 'package:flutter_don_salvatore/src/widgets/lista_articulos.dart';
 import 'package:flutter_don_salvatore/src/providers/my_provider.dart';
+
 
 CartaModel miCarta = new CartaModel();
 String categoriaSeleccionada = "";
@@ -13,33 +15,31 @@ List<Articulo> articulos = [];
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    
     final MyProvider miProvider = Provider.of<MyProvider>(context);
 
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: <Widget>[
-            ListaCategorias(miProvider),
-            // Contenedor que ocupa la pantalla entera menos 150 que es lo que le deja a ListaCategorias para darle su alto
-            Container(
-              height: MediaQuery.of(context).size.height - 150,
-              child: ListaArticulos(articulos),
-            ),
-          ],
-        ),
+      appBar: appBarLogo(),
+      body: Column(
+        children: <Widget>[
+          ListaCategorias(miProvider),
+          // Contenedor que ocupa la pantalla entera menos 150 que es lo que le deja a ListaCategorias para darle su alto
+          Container(
+            height: MediaQuery.of(context).size.height - 190,
+            child: ListaArticulos(articulos),
+          ),
+        ],
       ),
     );
   }
+
+  
+  
 }
 
 class ListaCategorias extends StatefulWidget {
-
   final MyProvider miProvider;
 
-
   ListaCategorias(this.miProvider);
-
 
   @override
   _ListaCategoriasState createState() => _ListaCategoriasState();
@@ -71,7 +71,8 @@ class _ListaCategoriasState extends State<ListaCategorias> {
           itemBuilder: (BuildContext context, int index) {
             return GestureDetector(
               onTap: () {
-                widget.miProvider.categoriaSeleccionada = miCarta.categorias[index].nombreCategoria;
+                widget.miProvider.categoriaSeleccionada =
+                    miCarta.categorias[index].nombreCategoria;
                 print(miCarta.categorias[index].nombreCategoria);
                 setState(() {
                   categoriaSeleccionada =
@@ -93,7 +94,7 @@ class _ListaCategoriasState extends State<ListaCategorias> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Image.asset("""assets/${miCarta.categorias[index].icono}""",
-                        height: 60.0),
+                        height: 55.0),
                     //TODO: FALTA CARGAR COLOR DE CONTAINER
                     SizedBox(height: 5.0),
                     Text(
@@ -113,3 +114,5 @@ class _ListaCategoriasState extends State<ListaCategorias> {
     }
   }
 }
+
+
