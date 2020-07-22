@@ -49,7 +49,7 @@ class _ListaCategoriasState extends State<ListaCategorias> {
   @override
   Widget build(BuildContext context) {
 
-    final categoria = Provider.of<MyProvider>(context);
+    final MyProvider miProvider = Provider.of<MyProvider>(context);
 
     // Si aun no se ha cargado al carta.json local mostramos el CircularProgressIndicator
     if (miCarta.categorias == null) {

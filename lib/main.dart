@@ -9,7 +9,7 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Provider<MyProvider>(
+    return ChangeNotifierProvider<MyProvider>(
       create: (context) => MyProvider(),
       child: MaterialApp(
         title: 'DonSalvatore',

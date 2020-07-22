@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class MyProvider with ChangeNotifier {
   String _categoriaSeleccionada = '';
@@ -7,8 +7,9 @@ class MyProvider with ChangeNotifier {
     return _categoriaSeleccionada;
   }
 
-  set categoriaSeleccionada(categoriaSeleccionada) {
+  set categoriaSeleccionada(String categoriaSeleccionada) {
     this._categoriaSeleccionada = categoriaSeleccionada;
+
     notifyListeners();
   }
 }
