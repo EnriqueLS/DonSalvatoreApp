@@ -13,11 +13,14 @@ List<Articulo> articulos = [];
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    
+    final MyProvider miProvider = Provider.of<MyProvider>(context);
+
     return Scaffold(
       body: SafeArea(
         child: Column(
           children: <Widget>[
-            ListaCategorias(),
+            ListaCategorias(miProvider),
             // Contenedor que ocupa la pantalla entera menos 150 que es lo que le deja a ListaCategorias para darle su alto
             Container(
               height: MediaQuery.of(context).size.height - 150,
@@ -31,6 +34,13 @@ class HomePage extends StatelessWidget {
 }
 
 class ListaCategorias extends StatefulWidget {
+
+  MyProvider _miProvider;
+
+  ListaCategorias(MyProvider miProvider){
+    this._miProvider = miProvider;
+  }
+
   @override
   _ListaCategoriasState createState() => _ListaCategoriasState();
 }
@@ -48,8 +58,7 @@ class _ListaCategoriasState extends State<ListaCategorias> {
 
   @override
   Widget build(BuildContext context) {
-
-    final MyProvider miProvider = Provider.of<MyProvider>(context);
+    //final MyProvider miProvider = Provider.of<MyProvider>(context);
 
     // Si aun no se ha cargado al carta.json local mostramos el CircularProgressIndicator
     if (miCarta.categorias == null) {
@@ -62,6 +71,7 @@ class _ListaCategoriasState extends State<ListaCategorias> {
           itemBuilder: (BuildContext context, int index) {
             return GestureDetector(
               onTap: () {
+                widget._miProvider.categoriaSeleccionada = miCarta.categorias[index].nombreCategoria;
                 print(miCarta.categorias[index].nombreCategoria);
                 setState(() {
                   categoriaSeleccionada =
@@ -75,8 +85,8 @@ class _ListaCategoriasState extends State<ListaCategorias> {
                 decoration: BoxDecoration(
                   color: (categoriaSeleccionada ==
                           miCarta.categorias[index].nombreCategoria)
-                      ? Colors.indigo[200]
-                      : Colors.yellow,
+                      ? Colors.blueGrey
+                      : Colors.blueGrey[100],
                   borderRadius: BorderRadius.all(Radius.circular(20.0)),
                 ),
                 child: Column(
