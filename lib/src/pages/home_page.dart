@@ -5,7 +5,7 @@ import 'package:flutter_don_salvatore/src/widgets/appbar_logo.dart';
 import 'package:flutter_don_salvatore/src/models/carta_model.dart';
 import 'package:flutter_don_salvatore/src/services/carta_service.dart';
 import 'package:flutter_don_salvatore/src/widgets/lista_articulos.dart';
-import 'package:flutter_don_salvatore/src/providers/my_provider.dart';
+import 'package:flutter_don_salvatore/src/providers/mi_provider.dart';
 
 
 CartaModel miCarta = new CartaModel();
@@ -15,9 +15,10 @@ List<Articulo> articulos = [];
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final MyProvider miProvider = Provider.of<MyProvider>(context);
+    final MiProvider miProvider = Provider.of<MiProvider>(context);
 
     return Scaffold(
+      backgroundColor: Colors.white12,
       appBar: appBarLogo(),
       body: Column(
         children: <Widget>[
@@ -37,7 +38,7 @@ class HomePage extends StatelessWidget {
 }
 
 class ListaCategorias extends StatefulWidget {
-  final MyProvider miProvider;
+  final MiProvider miProvider;
 
   ListaCategorias(this.miProvider);
 
@@ -58,8 +59,6 @@ class _ListaCategoriasState extends State<ListaCategorias> {
 
   @override
   Widget build(BuildContext context) {
-    //final MyProvider miProvider = Provider.of<MyProvider>(context);
-
     // Si aun no se ha cargado al carta.json local mostramos el CircularProgressIndicator
     if (miCarta.categorias == null) {
       return CircularProgressIndicator();
@@ -73,18 +72,21 @@ class _ListaCategoriasState extends State<ListaCategorias> {
               onTap: () {
                 widget.miProvider.categoriaSeleccionada =
                     miCarta.categorias[index].nombreCategoria;
+                    
+                articulos = miCarta.categorias[index].articulos;
+
                 print(miCarta.categorias[index].nombreCategoria);
-                setState(() {
-                  categoriaSeleccionada =
-                      miCarta.categorias[index].nombreCategoria;
-                  articulos = miCarta.categorias[index].articulos;
-                });
+                // setState(() {
+                //   categoriaSeleccionada =
+                //       miCarta.categorias[index].nombreCategoria;
+                //   articulos = miCarta.categorias[index].articulos;
+                // });
               },
               child: Container(
                 width: 100,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 6.0),
                 decoration: BoxDecoration(
-                  color: (categoriaSeleccionada ==
+                  color: (widget.miProvider.categoriaSeleccionada ==
                           miCarta.categorias[index].nombreCategoria)
                       ? Colors.blueGrey
                       : Colors.blueGrey[100],

@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
-  Widget appBarLogo() {
-    return AppBar(backgroundColor: Colors.black45 ,title: Row(
+Widget appBarLogo() {
+  return AppBar(
+    backgroundColor: Colors.black,
+    elevation: 0,
+    title: Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Image.asset(
@@ -10,5 +13,6 @@ import 'package:flutter/material.dart';
           height: 40,
         ),
       ],
-    ),);
-  }
+    ),
+  );
+}

@@ -17,7 +17,7 @@
 				},
 				{
 					"nombreArticulo": "Ensalada roma",
-					"ingredientes": "Lechuga, tomate, maiz, pan tostado",
+					"ingredientes": "Lechuga, tomate, maiz, pan tostado, manzana, otra cosa, salsa rosa",
 					"precio": "6.7"
 				}
 			]
@@ -90,6 +90,28 @@
 					"nombreArticulo": "Pantera blanca",
 					"ingredientes": "Hamburguesa, tomate, maiz, pan tostado",
 					"precio": "6.7"
+				}
+			]
+		},
+		{
+			"nombreCategoria": "Postres",
+			"color": "29",
+			"icono": "icon_pizza.png",
+			"articulos": [
+				{
+					"nombreArticulo": "Tarta de queso",
+					"ingredientes": "...",
+					"precio": "2.5"
+				},
+				{
+					"nombreArticulo": "Muss de chocolate",
+					"ingredientes": "...",
+					"precio": "2.6"
+				},
+				{
+					"nombreArticulo": "Tarta de whisky",
+					"ingredientes": "...",
+					"precio": "2.7"
 				}
 			]
 		}

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MyProvider with ChangeNotifier {
+class MiProvider with ChangeNotifier {
   String _categoriaSeleccionada = '';
 
   get categoriaSeleccionada {
