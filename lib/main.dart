@@ -12,6 +12,10 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider<MiProvider>(
       create: (context) => MiProvider(),
       child: MaterialApp(
+        theme: ThemeData(
+          backgroundColor: Colors.black,
+          appBarTheme: AppBarTheme(color: Colors.black),
+        ),
         title: 'DonSalvatore',
         home: HomePage(),
       ),
