@@ -14,11 +14,11 @@ class ListaArticulos extends StatelessWidget {
       itemBuilder: (BuildContext context, int index) {
         return Container(
           height: 75.0,
-          margin: EdgeInsets.symmetric(horizontal: 6.0, vertical: 3.0),
+          margin: EdgeInsets.symmetric(horizontal: 6.0, vertical: 2.0),
           padding: EdgeInsets.all(10.0),
           decoration: BoxDecoration(
-            color: Colors.white10,
-            borderRadius: BorderRadius.circular(8.0),
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(6.0),
             // boxShadow: [
             //   BoxShadow(
             //     color: Colors.grey.withOpacity(0.5),
@@ -38,17 +38,24 @@ class ListaArticulos extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     this.articulos[index].nombreArticulo,
-                    style: TextStyle(fontSize: 20, color: Colors.white),
+                    style: TextStyle(fontSize: 20, color: Colors.black),
                   ),
-                  Text(
-                    this.articulos[index].precio + ' €',
-                    style: TextStyle(fontSize: 20, color: Colors.yellow),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xFFffbb35),
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                    padding: EdgeInsets.symmetric(vertical: 1.0, horizontal: 7.0),
+                    child: Text(
+                      this.articulos[index].precio + '€',
+                      style: TextStyle(fontSize: 19, color: Colors.white),
+                    ),
                   ),
                 ],
               ),
               Text(
                 this.articulos[index].ingredientes,
-                style: TextStyle(fontSize: 12, color: Colors.white),
+                style: TextStyle(fontSize: 12, color: Colors.black),
               ),
             ],
           ),

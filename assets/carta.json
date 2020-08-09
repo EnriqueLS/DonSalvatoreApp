@@ -3,7 +3,7 @@
 		{
 			"nombreCategoria": "Entrantes",
 			"color": "29",
-			"icono": "icon_pizza.png",
+			"icono": "icon_entrantes.png",
 			"articulos": [
 				{
 					"nombreArticulo": "Pan de ajo",
@@ -13,7 +13,7 @@
 				{
 					"nombreArticulo": "Pan de ajo con queso",
 					"ingredientes": "",
-					"precio": "5.5"
+					"precio": "5,5"
 				},
 				{
 					"nombreArticulo": "Jamón y queso",
@@ -23,7 +23,7 @@
 				{
 					"nombreArticulo": "Patatas fritas",
 					"ingredientes": "Opcional con mayonesa, salsa rosa o salsa brava (+ 0.2€)",
-					"precio": "1.5"
+					"precio": "1,5"
 				},
 				{
 					"nombreArticulo": "Patatas fritas bacon y queso",
@@ -38,12 +38,12 @@
 				{
 					"nombreArticulo": "Ensaladilla de mariscos",
 					"ingredientes": "",
-					"precio": "2.5"
+					"precio": "2,5"
 				},
 				{
 					"nombreArticulo": "Porción de pizza",
 					"ingredientes": "Tomate, mozzarela, jamón york",
-					"precio": "2.5"
+					"precio": "2,5"
 				},
 				{
 					"nombreArticulo": "Pan pizza (1)",
@@ -58,7 +58,7 @@
 				{
 					"nombreArticulo": "Alitas de pollo",
 					"ingredientes": "",
-					"precio": "4.5"
+					"precio": "4,5"
 				},
 				{
 					"nombreArticulo": "Tabla de quesos",
@@ -73,19 +73,19 @@
 				{
 					"nombreArticulo": "Queso de cabra",
 					"ingredientes": "Al horno con mermelada de tomate",
-					"precio": "4.5"
+					"precio": "4,5"
 				},
 				{
 					"nombreArticulo": "Nuggets de pollo",
 					"ingredientes": "Con salsa blanca",
-					"precio": "4.5"
+					"precio": "4,5"
 				}
 			]
 		},
 		{
 			"nombreCategoria": "Ensaladas",
 			"color": "29",
-			"icono": "icon_pizza.png",
+			"icono": "icon_ensaladas.png",
 			"articulos": [
 				{
 					"nombreArticulo": "De la casa",
@@ -114,7 +114,7 @@
 				},
 				{
 					"nombreArticulo": "Dumbo",
-					"ingredientes": "Lechuga, pollo, manzana, pan, tostado, piña, maíz, salsa ros",
+					"ingredientes": "Lechuga, pollo, manzana, pan, tostado, piña, maíz, salsa rosa",
 					"precio": "8"
 				},
 				{
@@ -131,30 +131,65 @@
 			"articulos": [
 				{
 					"nombreArticulo": "Margarita",
-					"ingredientes": "Tomate, queso, aceitunas",
-					"precio": "5"
+					"ingredientes": "Tomate, mozzarella, olivas",
+					"precio": "4.5€ - 7"
 				},
 				{
 					"nombreArticulo": "Prosciuto",
-					"ingredientes": "Tomate, queso, york",
-					"precio": "5.5"
+					"ingredientes": "Tomate, mozzarella, york",
+					"precio": "5€ - 7.5"
 				},
 				{
-					"nombreArticulo": "Formagi",
-					"ingredientes": "Tomate, queso",
-					"precio": "5.5"
+					"nombreArticulo": "Toscana",
+					"ingredientes": "Tomate, mozzarella, york, champiñones",
+					"precio": "5.5€ - 8"
 				},
 				{
-					"nombreArticulo": "Tonno",
-					"ingredientes": "Tomate, queso, atún",
-					"precio": "6"
+					"nombreArticulo": "Fungi",
+					"ingredientes": "Tomate, mozzarella, champiñones",
+					"precio": "5€ - 7.5"
+				},
+				{
+					"nombreArticulo": "Grosso",
+					"ingredientes": "Tomate, mozzarella, bacon",
+					"precio": "5€ - 7.5"
+				},
+				{
+					"nombreArticulo": "Salsiccia",
+					"ingredientes": "Tomate, mozzarella, franfurt",
+					"precio": "5€ - 7.5"
+				},
+				{
+					"nombreArticulo": "Toscana",
+					"ingredientes": "Tomate, mozzarella, york, champiñones",
+					"precio": "5.5€ - 8"
+				},
+				{
+					"nombreArticulo": "Salami",
+					"ingredientes": "Tomate, mozzarella, salami",
+					"precio": "5€ - 7.5"
+				},
+				{
+					"nombreArticulo": "Enrico",
+					"ingredientes": "Tomate, mozzarella, berberechos, gambas, york",
+					"precio": "5.5€ - 8"
+				},
+				{
+					"nombreArticulo": "Salvatore",
+					"ingredientes": "Tomate, mozzarella, berenjena, cebolla, chorizo picante",
+					"precio": "5.5€ - 8"
+				},
+				{
+					"nombreArticulo": "Cuatro estaciones",
+					"ingredientes": "Tomate, mozzarella, anchoas, york, alcachofas, champiñones",
+					"precio": "5.5€ - 8"
 				}
 			]
 		},
 		{
 			"nombreCategoria": "Hamburguesas",
 			"color": "29",
-			"icono": "icon_pizza.png",
+			"icono": "icon_hamburguesa.png",
 			"articulos": [
 				{
 					"nombreArticulo": "Pantera",
@@ -176,7 +211,7 @@
 		{
 			"nombreCategoria": "Bocadillos",
 			"color": "29",
-			"icono": "icon_pizza.png",
+			"icono": "icon_bocadillos.png",
 			"articulos": [
 				{
 					"nombreArticulo": "Jalufo",
@@ -198,7 +233,7 @@
 		{
 			"nombreCategoria": "Postres",
 			"color": "29",
-			"icono": "icon_pizza.png",
+			"icono": "icon_postres.png",
 			"articulos": [
 				{
 					"nombreArticulo": "Tarta de queso",

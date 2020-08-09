@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
     final MiProvider miProvider = Provider.of<MiProvider>(context);
 
     return Scaffold(
-      backgroundColor: Color(0xFF303143),
+      backgroundColor: Color(0xFFefedea),
       appBar: appBarLogo(),
       body: Column(
         children: <Widget>[
@@ -88,8 +88,8 @@ class _ListaCategoriasState extends State<ListaCategorias> {
                 decoration: BoxDecoration(
                   color: (widget.miProvider.categoriaSeleccionada ==
                           miCarta.categorias[index].nombreCategoria)
-                      ? Colors.blueGrey
-                      : Colors.blueGrey[100],
+                      ? Color(0xFFffbb35)
+                      : Colors.white,
                   borderRadius: BorderRadius.all(Radius.circular(20.0)),
                 ),
                 child: Column(
@@ -103,7 +103,10 @@ class _ListaCategoriasState extends State<ListaCategorias> {
                       miCarta.categorias[index].nombreCategoria,
                       style: TextStyle(
                           fontSize: 13.0,
-                          color: Colors.white,
+                          color: (widget.miProvider.categoriaSeleccionada ==
+                          miCarta.categorias[index].nombreCategoria)
+                      ? Colors.white
+                      : Colors.black,
                           fontWeight: FontWeight.bold),
                     ),
                   ],
