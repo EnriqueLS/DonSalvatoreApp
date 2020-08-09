@@ -1,24 +1,126 @@
 {
 	"categorias": [
 		{
+			"nombreCategoria": "Entrantes",
+			"color": "29",
+			"icono": "icon_pizza.png",
+			"articulos": [
+				{
+					"nombreArticulo": "Pan de ajo",
+					"ingredientes": "",
+					"precio": "4"
+				},
+				{
+					"nombreArticulo": "Pan de ajo con queso",
+					"ingredientes": "",
+					"precio": "5.5"
+				},
+				{
+					"nombreArticulo": "Jamón y queso",
+					"ingredientes": "",
+					"precio": "7"
+				},
+				{
+					"nombreArticulo": "Patatas fritas",
+					"ingredientes": "Opcional con mayonesa, salsa rosa o salsa brava (+ 0.2€)",
+					"precio": "1.5"
+				},
+				{
+					"nombreArticulo": "Patatas fritas bacon y queso",
+					"ingredientes": "Con bacon, queso al horno, salsa blanca",
+					"precio": "6"
+				},
+				{
+					"nombreArticulo": "Ensaladilla rusa",
+					"ingredientes": "",
+					"precio": "2"
+				},
+				{
+					"nombreArticulo": "Ensaladilla de mariscos",
+					"ingredientes": "",
+					"precio": "2.5"
+				},
+				{
+					"nombreArticulo": "Porción de pizza",
+					"ingredientes": "Tomate, mozzarela, jamón york",
+					"precio": "2.5"
+				},
+				{
+					"nombreArticulo": "Pan pizza (1)",
+					"ingredientes": "Tomate, mozzarela, jamón serrano",
+					"precio": "2"
+				},
+				{
+					"nombreArticulo": "Pan pizza (2)",
+					"ingredientes": "Tomate, mozzarela, atún",
+					"precio": "2"
+				},
+				{
+					"nombreArticulo": "Alitas de pollo",
+					"ingredientes": "",
+					"precio": "4.5"
+				},
+				{
+					"nombreArticulo": "Tabla de quesos",
+					"ingredientes": "",
+					"precio": "7"
+				},
+				{
+					"nombreArticulo": "Patatas delux",
+					"ingredientes": "Con salsa blanca",
+					"precio": "5"
+				},
+				{
+					"nombreArticulo": "Queso de cabra",
+					"ingredientes": "Al horno con mermelada de tomate",
+					"precio": "4.5"
+				},
+				{
+					"nombreArticulo": "Nuggets de pollo",
+					"ingredientes": "Con salsa blanca",
+					"precio": "4.5"
+				}
+			]
+		},
+		{
 			"nombreCategoria": "Ensaladas",
 			"color": "29",
 			"icono": "icon_pizza.png",
 			"articulos": [
 				{
-					"nombreArticulo": "Ensalada de la casa",
-					"ingredientes": "Lechuga, tomate, cebolla, aceitunas",
+					"nombreArticulo": "De la casa",
+					"ingredientes": "Lechuga, tomate, cebolla, aceitunas, atún, zanahoria",
+					"precio": "6"
+				},
+				{
+					"nombreArticulo": "Italiana",
+					"ingredientes": "Lechuga, tomate, cebolla,,a ceitunas, queso, york",
 					"precio": "6.5"
 				},
 				{
-					"nombreArticulo": "Ensalada italiana",
-					"ingredientes": "Lechuga, tomate, cebolla, aceitunas",
-					"precio": "6.6"
+					"nombreArticulo": "Bella",
+					"ingredientes": "Lechuga, tomate, aceitunas,, atún, huevo duro, queso, maíz",
+					"precio": "7.75"
 				},
 				{
-					"nombreArticulo": "Ensalada roma",
-					"ingredientes": "Lechuga, tomate, maiz, pan tostado, manzana, otra cosa, salsa rosa",
-					"precio": "6.7"
+					"nombreArticulo": "Roma",
+					"ingredientes": "Lechuga, tomate, cebolla, aceitunas, atún, queso, anchoas, huevo, salmón",
+					"precio": "8"
+				},
+				{
+					"nombreArticulo": "Marítima",
+					"ingredientes": "Tomate, anchoas, cebolla, aceitunas, queso fresco, atún",
+					"precio": "6.5"
+				},
+				{
+					"nombreArticulo": "Dumbo",
+					"ingredientes": "Lechuga, pollo, manzana, pan, tostado, piña, maíz, salsa ros",
+					"precio": "8"
+				},
+				{
+					"nombreArticulo": "Con salsa rosa, roquefort o yogurt",
+					"ingredientes": "",
+					"precio": "1"
 				}
 			]
 		},

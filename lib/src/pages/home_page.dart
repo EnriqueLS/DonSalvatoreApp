@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
     final MiProvider miProvider = Provider.of<MiProvider>(context);
 
     return Scaffold(
-      backgroundColor: Colors.white12,
+      backgroundColor: Color(0xFF303143),
       appBar: appBarLogo(),
       body: Column(
         children: <Widget>[

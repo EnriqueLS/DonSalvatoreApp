@@ -13,8 +13,10 @@ class MyApp extends StatelessWidget {
       create: (context) => MiProvider(),
       child: MaterialApp(
         theme: ThemeData(
-          backgroundColor: Colors.black,
-          appBarTheme: AppBarTheme(color: Colors.black),
+          primaryColor: Color(0xFFd35be5),
+          accentColor: Color(0xFF63d372),
+          backgroundColor: Color(0xFFdbdb48),
+          appBarTheme: AppBarTheme(color: Color(0xFF303143)),
         ),
         title: 'DonSalvatore',
         home: HomePage(),

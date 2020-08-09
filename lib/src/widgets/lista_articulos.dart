@@ -17,7 +17,7 @@ class ListaArticulos extends StatelessWidget {
           margin: EdgeInsets.symmetric(horizontal: 6.0, vertical: 3.0),
           padding: EdgeInsets.all(10.0),
           decoration: BoxDecoration(
-            color: Colors.white24,
+            color: Colors.white10,
             borderRadius: BorderRadius.circular(8.0),
             // boxShadow: [
             //   BoxShadow(
