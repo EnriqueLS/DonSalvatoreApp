@@ -13,7 +13,8 @@ class SplashScreenPage extends StatefulWidget {
 }
 
 class _SplashScreenPageState extends State<SplashScreenPage> {
-  String _versionName = 'V1.0';
+
+  //String _versionName = 'V1.0';
   final splashDelay = 3;
 
   @override
@@ -35,56 +36,17 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color(0xFF822807),
-      body: InkWell(
-        child: Stack(
-          fit: StackFit.expand,
-          children: <Widget>[
-            Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Expanded(
-                  flex: 7,
-                  child: Container(
-                      child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Image.asset(
-                        'assets/Logo.png',
-                        height: 300,
-                        width: 300,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 10.0),
-                      ),
-                    ],
-                  )),
-                ),
-                Expanded(
-                  child: Column(
-                    children: <Widget>[
-                      //CircularProgressIndicator(),
-                      Container(
-                        height: 10,
-                      ),
-                      Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: <Widget>[
-                            Spacer(),
-                            //Text(_versionName),
-                            Spacer(
-                              flex: 4,
-                            ),
-                            //Text('androing'),
-                            Spacer(),
-                          ])
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ],
+      final screenSize = MediaQuery.of(context).size;
+
+    return Center(
+      child: Container(
+        height: screenSize.height,
+        width: screenSize.width,
+        color: Color(0xFF822807),
+        child: Image.asset(
+          'assets/Logo.png',
+          height: screenSize.height * 0.8,  //height: 300
+          width: screenSize.height * 0.8// width: 300,
         ),
       ),
     );

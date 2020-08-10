@@ -95,12 +95,12 @@
 				{
 					"nombreArticulo": "Italiana",
 					"ingredientes": "Lechuga, tomate, cebolla,,a ceitunas, queso, york",
-					"precio": "6.5"
+					"precio": "6,5"
 				},
 				{
 					"nombreArticulo": "Bella",
 					"ingredientes": "Lechuga, tomate, aceitunas,, atún, huevo duro, queso, maíz",
-					"precio": "7.75"
+					"precio": "7,75"
 				},
 				{
 					"nombreArticulo": "Roma",
@@ -110,7 +110,7 @@
 				{
 					"nombreArticulo": "Marítima",
 					"ingredientes": "Tomate, anchoas, cebolla, aceitunas, queso fresco, atún",
-					"precio": "6.5"
+					"precio": "6,5"
 				},
 				{
 					"nombreArticulo": "Dumbo",
@@ -132,57 +132,57 @@
 				{
 					"nombreArticulo": "Margarita",
 					"ingredientes": "Tomate, mozzarella, olivas",
-					"precio": "4.5€ - 7"
+					"precio": "4,5€ - 7"
 				},
 				{
 					"nombreArticulo": "Prosciuto",
 					"ingredientes": "Tomate, mozzarella, york",
-					"precio": "5€ - 7.5"
+					"precio": "5€ - 7,5"
 				},
 				{
 					"nombreArticulo": "Toscana",
 					"ingredientes": "Tomate, mozzarella, york, champiñones",
-					"precio": "5.5€ - 8"
+					"precio": "5,5€ - 8"
 				},
 				{
 					"nombreArticulo": "Fungi",
 					"ingredientes": "Tomate, mozzarella, champiñones",
-					"precio": "5€ - 7.5"
+					"precio": "5€ - 7,5"
 				},
 				{
 					"nombreArticulo": "Grosso",
 					"ingredientes": "Tomate, mozzarella, bacon",
-					"precio": "5€ - 7.5"
+					"precio": "5€ - 7,5"
 				},
 				{
 					"nombreArticulo": "Salsiccia",
 					"ingredientes": "Tomate, mozzarella, franfurt",
-					"precio": "5€ - 7.5"
+					"precio": "5€ - 7,5"
 				},
 				{
 					"nombreArticulo": "Toscana",
 					"ingredientes": "Tomate, mozzarella, york, champiñones",
-					"precio": "5.5€ - 8"
+					"precio": "5,5€ - 8"
 				},
 				{
 					"nombreArticulo": "Salami",
 					"ingredientes": "Tomate, mozzarella, salami",
-					"precio": "5€ - 7.5"
+					"precio": "5€ - 7,5"
 				},
 				{
 					"nombreArticulo": "Enrico",
 					"ingredientes": "Tomate, mozzarella, berberechos, gambas, york",
-					"precio": "5.5€ - 8"
+					"precio": "5,5€ - 8"
 				},
 				{
 					"nombreArticulo": "Salvatore",
 					"ingredientes": "Tomate, mozzarella, berenjena, cebolla, chorizo picante",
-					"precio": "5.5€ - 8"
+					"precio": "5,5€ - 8"
 				},
 				{
 					"nombreArticulo": "Cuatro estaciones",
 					"ingredientes": "Tomate, mozzarella, anchoas, york, alcachofas, champiñones",
-					"precio": "5.5€ - 8"
+					"precio": "5,5€ - 8"
 				}
 			]
 		},
@@ -194,17 +194,17 @@
 				{
 					"nombreArticulo": "Pantera",
 					"ingredientes": "Hamburguesa, tomate, cebolla, aceitunas",
-					"precio": "6.5"
+					"precio": "6,5"
 				},
 				{
 					"nombreArticulo": "Pantera rosa",
 					"ingredientes": "Hamburguesa, tomate, cebolla, aceitunas",
-					"precio": "6.6"
+					"precio": "6,6"
 				},
 				{
 					"nombreArticulo": "Pantera blanca",
 					"ingredientes": "Hamburguesa, tomate, maiz, pan tostado",
-					"precio": "6.7"
+					"precio": "6,7"
 				}
 			]
 		},
@@ -216,17 +216,17 @@
 				{
 					"nombreArticulo": "Jalufo",
 					"ingredientes": "Tomate, panceta",
-					"precio": "6.5"
+					"precio": "6,5"
 				},
 				{
 					"nombreArticulo": "Pepito",
 					"ingredientes": "Lomo",
-					"precio": "6.6"
+					"precio": "6,6"
 				},
 				{
 					"nombreArticulo": "Pantera blanca",
 					"ingredientes": "Hamburguesa, tomate, maiz, pan tostado",
-					"precio": "6.7"
+					"precio": "6,7"
 				}
 			]
 		},
@@ -238,17 +238,17 @@
 				{
 					"nombreArticulo": "Tarta de queso",
 					"ingredientes": "...",
-					"precio": "2.5"
+					"precio": "2,5"
 				},
 				{
 					"nombreArticulo": "Muss de chocolate",
 					"ingredientes": "...",
-					"precio": "2.6"
+					"precio": "2,6"
 				},
 				{
 					"nombreArticulo": "Tarta de whisky",
 					"ingredientes": "...",
-					"precio": "2.7"
+					"precio": "2,7"
 				}
 			]
 		}
