@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 //
 import 'package:flutter_don_salvatore/src/widgets/appbar_logo.dart';
+import 'package:flutter_don_salvatore/src/widgets/navDrawer.dart';
 import 'package:flutter_don_salvatore/src/models/carta_model.dart';
 import 'package:flutter_don_salvatore/src/services/carta_service.dart';
 import 'package:flutter_don_salvatore/src/widgets/lista_articulos.dart';
@@ -10,22 +11,23 @@ import 'package:flutter_don_salvatore/src/providers/mi_provider.dart';
 
 CartaModel miCarta = new CartaModel();
 String categoriaSeleccionada = "";
-List<Articulo> articulos = [];
+List<Articulo> articulos = []; //Debería llevarme articulos a Provider
 
-class HomePage extends StatelessWidget {
+class MenuPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final MiProvider miProvider = Provider.of<MiProvider>(context);
 
     return Scaffold(
       backgroundColor: Color(0xFFefedea),
+      drawer: NavDrawer(),
       appBar: appBarLogo(),
       body: Column(
         children: <Widget>[
           ListaCategorias(miProvider),
-          // Contenedor que ocupa la pantalla entera menos 150 que es lo que le deja a ListaCategorias para darle su alto
+          // Contenedor que ocupa la pantalla entera menos 185 que es lo que le deja a ListaCategorias para darle su alto
           Container(
-            height: MediaQuery.of(context).size.height - 190,
+            height: MediaQuery.of(context).size.height - 185,
             child: ListaArticulos(articulos),
           ),
         ],
@@ -59,7 +61,7 @@ class _ListaCategoriasState extends State<ListaCategorias> {
 
   @override
   Widget build(BuildContext context) {
-    // Si aun no se ha cargado al carta.json local mostramos el CircularProgressIndicator
+    // Si aun no se ha cargado la carta.json local mostramos el CircularProgressIndicator
     if (miCarta.categorias == null) {
       return CircularProgressIndicator();
     } else {
@@ -73,7 +75,7 @@ class _ListaCategoriasState extends State<ListaCategorias> {
                 widget.miProvider.categoriaSeleccionada =
                     miCarta.categorias[index].nombreCategoria;
                     
-                articulos = miCarta.categorias[index].articulos;
+                articulos = miCarta.categorias[index].articulos; //Debería llevarme articulos a Provider
 
                 print(miCarta.categorias[index].nombreCategoria);
                 // setState(() {
@@ -83,8 +85,8 @@ class _ListaCategoriasState extends State<ListaCategorias> {
                 // });
               },
               child: Container(
-                width: 100,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 6.0),
+                width: 95,
+                margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 5.0),
                 decoration: BoxDecoration(
                   color: (widget.miProvider.categoriaSeleccionada ==
                           miCarta.categorias[index].nombreCategoria)
@@ -96,8 +98,7 @@ class _ListaCategoriasState extends State<ListaCategorias> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Image.asset("""assets/${miCarta.categorias[index].icono}""",
-                        height: 55.0),
-                    //TODO: FALTA CARGAR COLOR DE CONTAINER
+                        height: 45.0),
                     SizedBox(height: 5.0),
                     Text(
                       miCarta.categorias[index].nombreCategoria,

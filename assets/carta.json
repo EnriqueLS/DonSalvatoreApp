@@ -118,9 +118,9 @@
 					"precio": "8"
 				},
 				{
-					"nombreArticulo": "Con salsa rosa, roquefort o yogurt",
-					"ingredientes": "",
-					"precio": "1"
+					"nombreArticulo": "Con salsa",
+					"ingredientes": "Con salsa rosa, roquefort o yogurt",
+					"precio": "+1"
 				}
 			]
 		},

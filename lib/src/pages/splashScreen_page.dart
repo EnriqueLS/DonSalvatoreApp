@@ -1,7 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
-import 'package:flutter_don_salvatore/src/pages/home_page.dart';
+import 'package:flutter_don_salvatore/src/pages/menu_page.dart';
+
 
 class SplashScreenPage extends StatefulWidget {
   final Color backgroundColor = Colors.white;
@@ -31,7 +32,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
 
   void navigationPage() {
     Navigator.pushReplacement(context,
-        MaterialPageRoute(builder: (BuildContext context) => HomePage()));
+        MaterialPageRoute(builder: (BuildContext context) => MenuPage()));
   }
 
   @override
