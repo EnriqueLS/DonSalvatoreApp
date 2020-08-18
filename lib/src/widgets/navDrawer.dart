@@ -9,11 +9,11 @@ class NavDrawer extends StatelessWidget {
         children: <Widget>[
           DrawerHeader(
             child: Text(
-              'Side menu',
+              '...',
               style: TextStyle(color: Colors.white, fontSize: 25),
             ),
             decoration: BoxDecoration(
-                color: Color(0xFF822807),
+                color: Color(0xFF78372f),
                 image: DecorationImage(
                     fit: BoxFit.fill,
                     image: AssetImage('assets/Logo.png'))),

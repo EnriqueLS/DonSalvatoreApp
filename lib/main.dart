@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           primaryColor: Color(0xFFd35be5),
           accentColor: Color(0xFF63d372),
           backgroundColor: Colors.white,
-          appBarTheme: AppBarTheme(color: Color(0xFF822807)),
+          appBarTheme: AppBarTheme(color: Color(0xFF78372f)),
         ),
         title: 'DonSalvatore',
         home: SplashScreenPage(),

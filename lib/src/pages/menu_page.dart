@@ -8,7 +8,6 @@ import 'package:flutter_don_salvatore/src/services/carta_service.dart';
 import 'package:flutter_don_salvatore/src/widgets/lista_articulos.dart';
 import 'package:flutter_don_salvatore/src/providers/mi_provider.dart';
 
-
 CartaModel miCarta = new CartaModel();
 String categoriaSeleccionada = "";
 List<Articulo> articulos = []; //Debería llevarme articulos a Provider
@@ -34,15 +33,13 @@ class MenuPage extends StatelessWidget {
       ),
     );
   }
-
-  
-  
 }
 
 class ListaCategorias extends StatefulWidget {
   final MiProvider miProvider;
 
   ListaCategorias(this.miProvider);
+
 
   @override
   _ListaCategoriasState createState() => _ListaCategoriasState();
@@ -54,6 +51,9 @@ class _ListaCategoriasState extends State<ListaCategorias> {
     CartaService().loadCarta().then((result) {
       setState(() {
         miCarta = result;
+        // Inicializamos categoríaSeleccionada y los artículos con Entrantes para que aparezca algo al entrar a la aplicación por primera vez
+        widget.miProvider.categoriaSeleccionada = "Entrantes";
+        articulos = miCarta.categorias[0].articulos;
       });
     });
     super.initState();
@@ -74,8 +74,9 @@ class _ListaCategoriasState extends State<ListaCategorias> {
               onTap: () {
                 widget.miProvider.categoriaSeleccionada =
                     miCarta.categorias[index].nombreCategoria;
-                    
-                articulos = miCarta.categorias[index].articulos; //Debería llevarme articulos a Provider
+
+                articulos = miCarta.categorias[index]
+                    .articulos; //Debería llevarme articulos a Provider
 
                 print(miCarta.categorias[index].nombreCategoria);
                 // setState(() {
@@ -105,9 +106,9 @@ class _ListaCategoriasState extends State<ListaCategorias> {
                       style: TextStyle(
                           fontSize: 13.0,
                           color: (widget.miProvider.categoriaSeleccionada ==
-                          miCarta.categorias[index].nombreCategoria)
-                      ? Colors.white
-                      : Colors.black,
+                                  miCarta.categorias[index].nombreCategoria)
+                              ? Colors.white
+                              : Colors.black,
                           fontWeight: FontWeight.bold),
                     ),
                   ],
@@ -120,5 +121,3 @@ class _ListaCategoriasState extends State<ListaCategorias> {
     }
   }
 }
-
-

@@ -43,7 +43,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
       child: Container(
         height: screenSize.height,
         width: screenSize.width,
-        color: Color(0xFF822807),
+        color: Color(0xFF78372f),
         child: Image.asset(
           'assets/Logo.png',
           height: screenSize.height * 0.8,  //height: 300
