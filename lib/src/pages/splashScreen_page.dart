@@ -5,9 +5,8 @@ import 'package:flutter_don_salvatore/src/pages/menu_page.dart';
 
 
 class SplashScreenPage extends StatefulWidget {
-  final Color backgroundColor = Colors.white;
-  final TextStyle styleTextUnderTheLoader = TextStyle(
-      fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.black);
+  //final Color backgroundColor = Colors.white;
+  //final TextStyle styleTextUnderTheLoader = TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.black);
 
   @override
   _SplashScreenPageState createState() => _SplashScreenPageState();
@@ -43,7 +42,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
       child: Container(
         height: screenSize.height,
         width: screenSize.width,
-        color: Color(0xFF78372f),
+        //color: Color(0xFF111111),
         child: Image.asset(
           'assets/Logo.png',
           height: screenSize.height * 0.8,  //height: 300

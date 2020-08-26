@@ -18,7 +18,7 @@ class MenuPage extends StatelessWidget {
     final MiProvider miProvider = Provider.of<MiProvider>(context);
 
     return Scaffold(
-      backgroundColor: Color(0xFFefedea),
+      //backgroundColor: Color(0xFFefedea),
       drawer: NavDrawer(),
       appBar: appBarLogo(),
       body: Column(
@@ -39,7 +39,6 @@ class ListaCategorias extends StatefulWidget {
   final MiProvider miProvider;
 
   ListaCategorias(this.miProvider);
-
 
   @override
   _ListaCategoriasState createState() => _ListaCategoriasState();
