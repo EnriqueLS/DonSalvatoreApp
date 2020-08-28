@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_don_salvatore/src/models/carta_model.dart';
+import 'package:flutter_don_salvatore/src/estilos.dart';
 
 class ListaArticulos extends StatelessWidget {
   final List<Articulo> articulos;
@@ -19,10 +20,10 @@ class ListaArticulos extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return Container(
             height: 75.0,
-            margin: EdgeInsets.symmetric(horizontal: 6.0, vertical: 2.0),
+            margin: EdgeInsets.symmetric(horizontal: 6.0, vertical: 0.5),
             padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: colorSecundario,
               borderRadius: BorderRadius.circular(6.0),
               // boxShadow: [
               //   BoxShadow(
@@ -43,11 +44,11 @@ class ListaArticulos extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       this.articulos[index].nombreArticulo,
-                      style: TextStyle(fontSize: 20, color: Colors.black),
+                      style: TextStyle(fontSize: 20, color: colorTextoTitulos),
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        color: Color(0xFFffbb35),
+                        color: colorPrincipal,
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       padding:
@@ -61,7 +62,7 @@ class ListaArticulos extends StatelessWidget {
                 ),
                 Text(
                   this.articulos[index].ingredientes,
-                  style: TextStyle(fontSize: 13, color: Colors.black),
+                  style: TextStyle(fontSize: 13, color: colorTextoTitulos),
                 ),
               ],
             ),

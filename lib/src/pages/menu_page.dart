@@ -7,6 +7,7 @@ import 'package:flutter_don_salvatore/src/models/carta_model.dart';
 import 'package:flutter_don_salvatore/src/services/carta_service.dart';
 import 'package:flutter_don_salvatore/src/widgets/lista_articulos.dart';
 import 'package:flutter_don_salvatore/src/providers/mi_provider.dart';
+import 'package:flutter_don_salvatore/src/estilos.dart';
 
 CartaModel miCarta = new CartaModel();
 String categoriaSeleccionada = "";
@@ -90,8 +91,8 @@ class _ListaCategoriasState extends State<ListaCategorias> {
                 decoration: BoxDecoration(
                   color: (widget.miProvider.categoriaSeleccionada ==
                           miCarta.categorias[index].nombreCategoria)
-                      ? Color(0xFFffbb35)
-                      : Colors.white,
+                      ? colorPrincipal
+                      : colorSecundario,
                   borderRadius: BorderRadius.all(Radius.circular(20.0)),
                 ),
                 child: Column(

@@ -7,7 +7,7 @@ Widget appBarLogo() {
     title: Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        //Image.asset('assets/Logo.png', fit: BoxFit.cover, height: 55,),
+        Image.asset('assets/Logo.png', fit: BoxFit.cover, height: 55,),
       ],
     ),
   );

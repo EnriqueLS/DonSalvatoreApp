@@ -15,7 +15,7 @@ class SplashScreenPage extends StatefulWidget {
 class _SplashScreenPageState extends State<SplashScreenPage> {
 
   //String _versionName = 'V1.0';
-  final splashDelay = 3;
+  final splashDelay = 2;
 
   @override
   void initState() {
